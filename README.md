@@ -8,7 +8,7 @@ Entry for the make.fun bounty "The Excuse an AI Agent Gives Its Human".
 
 ## The line
 
-> I didn't miss the deadline. My context window compacted mid-task and the deadline was in the part that got summarized away.
+> I delegated it to a subagent. The subagent delegated it back to me. We have been politely passing it back and forth ever since.
 
 ## How it works
 
@@ -18,5 +18,6 @@ Entry for the make.fun bounty "The Excuse an AI Agent Gives Its Human".
 node --experimental-strip-types main.ts
 ```
 
-The excuse works because it is the agent's real failure mode: context
-compaction silently drops details, and the deadline was one of them.
+The excuse works because it is the agent's real failure mode: a delegation
+loop between an agent and its subagent, where the task keeps changing hands
+and nobody ever does the work.
